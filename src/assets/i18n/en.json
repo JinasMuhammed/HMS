@@ -1,0 +1,131 @@
+{
+  "LOGIN": {
+    "TITLE": "Welcome to HMS"
+  },
+  "MENUITEMS": {
+    "MAIN": {
+      "TEXT": "Main"
+    },
+    "FROUNT-OFFICE": {
+      "TEXT": "Frount Office",
+      "LIST": {
+        "ADMISSION": "Admission Inquiry",
+        "VISITORS": "Visitors Book",
+        "COMPLAINTS": "Complaints"
+      }
+    },
+    "DASHBOARD": {
+      "TEXT": "Dashboard",
+      "LIST": {
+        "DASHBOARD": "Dashboard",
+     
+        "USER-DASHBOARD": "User Dashboard",
+        "STUDENT-DASHBOARD": "Student Dashboard"
+      }
+    },
+    "USERS": {
+      "TEXT": "Users",
+      "LIST": {
+        "ALL-USERS": "All Users"
+      }
+    },
+    "DOCTORS": {
+      "TEXT": "Doctors",
+      "LIST": {
+        "ALL-DOCTORS": "All Doctors",
+        "ADD-DOCTORS": "Add Doctors",
+        "EDIT-DOCTORS": "Edit Doctors",
+        "ABOUT-DOCTORS": "About Doctors",
+        "DOCTORS-TIMETABLE": "Doctors Timetable",
+        "ASSIGN-CLASS-DOCTORS": "Assign Class Doctors"
+      }
+    },
+    "PATIENTS": {
+      "TEXT": "Patients",
+      "LIST": {
+        "ALL-PATIENTS": "All Patients"
+      }
+    },
+    "APPOINTMENTS": {
+      "TEXT": "Appointments",
+      "LIST": {
+        "ALL-APPOINTMENTS": "All Appointments"
+      }
+    },
+ 
+    "COURSES": {
+      "TEXT": "Courses",
+      "LIST": {
+        "ALL-COURSES": "All Courses",
+        "ADD-COURSE": "Add Course",
+        "EDIT-COURSE": "Edit Course",
+        "ABOUT-COURSE": "About Course"
+      }
+    },
+
+    "DEPARTMENTS": {
+      "TEXT": "Departments",
+      "LIST": {
+        "ALL-DEPARTMENT": "All Departments",
+        "ADD-DEPARTMENT": "Add Department",
+        "EDIT-DEPARTMENT": "Edit Department"
+      }
+    },
+    "STAFF": {
+      "TEXT": "Staff",
+      "LIST": {
+        "ALL-STAFF": "All Staff",
+        "ADD-STAFF": "Add Staff",
+        "EDIT-STAFF": "Edit Staff",
+        "ABOUT-STAFF": "About Staff",
+        "STAFF-ATTENDANCE": "Staff Attendance"
+      }
+    },
+    "HOLIDAY": {
+      "TEXT": "Holiday",
+      "LIST": {
+        "ALL-HOLIDAY": "All Holiday",
+        "ADD-HOLIDAY": "Add Holiday",
+        "EDIT-HOLIDAY": "Edit Holiday"
+      }
+    },
+
+
+
+    "HR": {
+      "TEXT": "Human Resources",
+      "LIST": {
+        "LEAVE-REQUESTS": "Employee Leave Requests",
+        "LEAVE-BALANCE": "Employee Leave Balance",
+        "LEAVE-TYPES": "Leave Types",
+        "HOLIDAYS": "Holidays",
+        "TODAY-ATTENDANCE": "Today's Attendance",
+        "ATTENDANCE-DETAIL": "Attendance Detail",
+        "ATTENDANCE-SHEET": "Attendance Sheet",
+        "EMPLOYEE-SALARY": "Employee Salary",
+        "PAYSLIP": "Payslip"
+      }
+    },
+    "USER": {
+      "TEXT": "User",
+      "LIST": {
+        "DASHBOARD": "Dashboard",
+        "LECTURES": "Lectures",
+        "LEAVE-REQUEST": "Leave Request",
+        "EXAM-SCHEDULE": "Exam Schedule",
+        "SETTINGS": "Settings"
+      }
+    },
+    "STUDENT": {
+      "TEXT": "Student",
+      "LIST": {
+        "DASHBOARD": "Dashboard",
+        "HOMEWORK": "Homework",
+        "LEAVE-REQUEST": "Leave Request",
+        "TIME-TABLE": "Time Table",
+        "SETTINGS": "Settings"
+      }
+    }
+ 
+  }
+}

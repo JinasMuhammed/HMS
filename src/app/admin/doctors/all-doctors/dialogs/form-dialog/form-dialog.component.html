@@ -1,0 +1,150 @@
+<div class="addContainer">
+  <div class="modalHeader">
+    <div class="avatarDetails">
+      <label class="hoverable" for="tableFileInput">
+        <img [src]="Doctors.image" alt="avatar">
+      </label>
+      <div class="modalTitle">
+        {{ dialogTitle }}
+      </div>
+    </div>
+    <button mat-icon-button mat-dialog-close class="modal-close-button" aria-label="Close dialog" type="button">
+      <mat-icon>close</mat-icon>
+    </button>
+  </div>
+
+  <div mat-dialog-content>
+    <form class="register-form m-4" [formGroup]="DoctorForm" (ngSubmit)="submit()">
+      <div class="row">
+        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 mb-2">
+          <mat-form-field class="example-full-width mb-3" appearance="outline">
+            <mat-label>First Name</mat-label>
+            <input matInput formControlName="first_name" required>
+            <mat-icon class="material-icons-outlined color-icon p-3" matSuffix>face</mat-icon>
+            <mat-error *ngIf="DoctorForm.get('first_name')?.hasError('required')">
+              First name is required
+            </mat-error>
+          </mat-form-field>
+        </div>
+        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 mb-2">
+          <mat-form-field class="example-full-width mb-3" appearance="outline">
+            <mat-label>Last Name</mat-label>
+            <input matInput formControlName="last_name" required>
+            <mat-icon class="material-icons-outlined color-icon p-3" matSuffix>face</mat-icon>
+            <mat-error *ngIf="DoctorForm.get('last_name')?.hasError('required')">
+              Last name is required
+            </mat-error>
+          </mat-form-field>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 mb-2">
+          <mat-form-field class="example-full-width mb-3" appearance="outline">
+            <mat-label>Email</mat-label>
+            <input matInput formControlName="email" required>
+            <mat-icon class="material-icons-outlined color-icon p-3" matSuffix>email</mat-icon>
+            <mat-error *ngIf="DoctorForm.get('email')?.hasError('email')">
+              Please enter a valid email address
+            </mat-error>
+          </mat-form-field>
+        </div>
+
+        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 mb-2">
+          <mat-form-field class="example-full-width mb-3" appearance="outline">
+            <mat-label>Mobile</mat-label>
+            <input matInput formControlName="phone" type="number" required>
+            <mat-icon class="material-icons-outlined color-icon p-3" matSuffix>phone</mat-icon>
+            <mat-error *ngIf="DoctorForm.get('phone')?.hasError('required')">
+              Phone number is required
+            </mat-error>
+          </mat-form-field>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 mb-2">
+          <mat-form-field class="example-full-width mb-3" appearance="outline">
+            <mat-label>Department</mat-label>
+            <mat-select formControlName="department" required>
+              <mat-option *ngFor="let department of departments" [value]="department.id">
+                {{ department.department_name }}
+              </mat-option>
+            </mat-select>
+            <mat-error *ngIf="DoctorForm.get('department')?.hasError('required')">
+              Department is required
+            </mat-error>
+          </mat-form-field>
+        </div>
+
+        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 mb-2">
+          <mat-form-field class="example-full-width mb-3" appearance="outline">
+            <mat-label>Gender</mat-label>
+            <mat-select formControlName="gender" required>
+              <mat-option value="male">Male</mat-option>
+              <mat-option value="female">Female</mat-option>
+              <mat-option value="other">Other</mat-option>
+            </mat-select>
+            <mat-error *ngIf="DoctorForm.get('gender')?.hasError('required')">
+              Gender is required
+            </mat-error>
+          </mat-form-field>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 mb-2">
+          <mat-form-field class="example-full-width mb-3" appearance="outline">
+            <mat-label>Address</mat-label>
+            <input matInput formControlName="address" required>
+            <mat-error *ngIf="DoctorForm.get('address')?.hasError('required')">
+              Address is required
+            </mat-error>
+          </mat-form-field>
+        </div>
+
+          <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 mb-2">
+            <mat-form-field class="example-full-width mb-3" appearance="outline">
+              <mat-label>Date of Birth</mat-label>
+              <input matInput [matDatepicker]="picker" formControlName="dob" required>
+              <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+              <mat-datepicker #picker></mat-datepicker>
+              <mat-error *ngIf="DoctorForm.get('dob')?.hasError('required')">
+                Date of birth is required
+              </mat-error>
+            </mat-form-field>
+          </div>
+
+      </div>
+      <div class="row">
+        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 mb-2">
+          <mat-form-field class="example-full-width mb-3" appearance="outline">
+            <mat-label>Biography</mat-label>
+            <textarea matInput formControlName="biography" rows="4"></textarea>
+            <mat-error *ngIf="DoctorForm.get('biography')?.hasError('required')">
+              Biography is required
+            </mat-error>
+          </mat-form-field>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 mb-2">
+          <label>Profile Image</label>
+          <app-file-upload formControlName="image"></app-file-upload>
+          <mat-error *ngIf="DoctorForm.get('image')?.hasError('required') && DoctorForm.get('image')?.touched">
+            Profile image is required
+          </mat-error>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 mb-2">
+          <div class="example-button-row">
+            <button mat-flat-button class="formSubmitBtn" [disabled]="!DoctorForm.valid" type="submit">Save</button>
+            <button mat-flat-button mat-dialog-close class="formCancelBtn" tabindex="-1">Cancel</button>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>

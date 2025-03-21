@@ -1,0 +1,446 @@
+{
+  "routes": [
+    {
+      "path": "",
+      "title": "MENUITEMS.MAIN.TEXT",
+      "iconType": "",
+      "icon": "",
+      "class": "",
+      "groupTitle": true,
+      "badge": "",
+      "badgeClass": "",
+      "role": ["All"],
+      "submenu": []
+    },
+
+    {
+      "path": "",
+      "title": "MENUITEMS.DASHBOARD.TEXT",
+      "iconType": "material-icons-outlined",
+      "icon": "space_dashboard",
+      "class": "menu-toggle",
+      "groupTitle": false,
+      "badge": "",
+      "badgeClass": "",
+      "role": ["Admin"],
+      "submenu": [
+     
+        {
+          "path": "/admin/dashboard/dashboard",
+          "title": "MENUITEMS.DASHBOARD.LIST.DASHBOARD",
+          "iconType": "",
+          "icon": "",
+          "class": "ml-menu",
+          "groupTitle": false,
+          "badge": "",
+          "badgeClass": "",
+          "role": [""],
+          "submenu": []
+        }
+     
+     
+      ]
+    },
+
+    {
+      "path": "",
+      "title": "MENUITEMS.USERS.TEXT",
+      "iconType": "material-icons-outlined",
+      "icon": "people_alt",
+      "class": "menu-toggle",
+      "groupTitle": false,
+      "badge": "",
+      "badgeClass": "",
+      "role": ["Admin"],
+      "submenu": [
+        {
+          "path": "/admin/users/all-users",
+          "title": "MENUITEMS.USERS.LIST.ALL-USERS",
+          "iconType": "",
+          "icon": "",
+          "class": "ml-menu",
+          "groupTitle": false,
+          "badge": "",
+          "badgeClass": "",
+          "role": [""],
+          "submenu": []
+        }
+       
+        
+        
+      ]
+    },
+    {
+      "path": "",
+      "title": "MENUITEMS.DOCTORS.TEXT",
+      "iconType": "material-icons-outlined",
+      "icon": "person",
+      "class": "menu-toggle",
+      "groupTitle": false,
+      "badge": "",
+      "badgeClass": "",
+      "role": ["Admin"],
+      "submenu": [
+        {
+          "path": "/admin/doctors/all-doctors",
+          "title": "MENUITEMS.DOCTORS.LIST.ALL-DOCTORS",
+          "iconType": "",
+          "icon": "",
+          "class": "ml-menu",
+          "groupTitle": false,
+          "badge": "",
+          "badgeClass": "",
+          "role": [""],
+          "submenu": []
+        }
+        
+     
+      ]
+    },
+    {
+      "path": "",
+      "title": "MENUITEMS.PATIENTS.TEXT",
+      "iconType": "material-icons-outlined",
+      "icon": "person",
+      "class": "menu-toggle",
+      "groupTitle": false,
+      "badge": "",
+      "badgeClass": "",
+      "role": ["Admin"],
+      "submenu": [
+        {
+          "path": "/admin/patients/all-patients",
+          "title": "MENUITEMS.PATIENTS.LIST.ALL-PATIENTS",
+          "iconType": "",
+          "icon": "",
+          "class": "ml-menu",
+          "groupTitle": false,
+          "badge": "",
+          "badgeClass": "",
+          "role": [""],
+          "submenu": []
+        }
+        
+     
+      ]
+    },
+  
+ 
+
+
+    {
+      "path": "",
+      "title": "MENUITEMS.DEPARTMENTS.TEXT",
+      "iconType": "material-icons-outlined",
+      "icon": "business",
+      "class": "menu-toggle",
+      "groupTitle": false,
+      "badge": "",
+      "badgeClass": "",
+      "role": ["Admin"],
+      "submenu": [
+        {
+          "path": "/admin/departments/all-departments",
+          "title": "MENUITEMS.DEPARTMENTS.LIST.ALL-DEPARTMENT",
+          "iconType": "",
+          "icon": "",
+          "class": "ml-menu",
+          "groupTitle": false,
+          "badge": "",
+          "badgeClass": "",
+          "role": [""],
+          "submenu": []
+        }
+   
+      ]
+    },
+    {
+      "path": "",
+      "title": "MENUITEMS.STAFF.TEXT",
+      "iconType": "material-icons-outlined",
+      "icon": "face",
+      "class": "menu-toggle",
+      "groupTitle": false,
+      "badge": "",
+      "badgeClass": "",
+      "role": ["Admin"],
+      "submenu": [
+        {
+          "path": "/admin/staff/all-staff",
+          "title": "MENUITEMS.STAFF.LIST.ALL-STAFF",
+          "iconType": "",
+          "icon": "",
+          "class": "ml-menu",
+          "groupTitle": false,
+          "badge": "",
+          "badgeClass": "",
+          "role": [""],
+          "submenu": []
+        }
+      ]
+    },
+
+
+ 
+
+    {
+      "path": "",
+      "title": "MENUITEMS.HR.TEXT",
+      "iconType": "material-icons-outlined",
+      "icon": "manage_accounts",
+      "class": "menu-toggle",
+      "groupTitle": false,
+      "badge": "",
+      "badgeClass": "",
+      "role": ["Admin"],
+      "submenu": [
+        {
+          "path": "/admin/human-resources/leave-requests",
+          "title": "MENUITEMS.HR.LIST.LEAVE-REQUESTS",
+          "iconType": "",
+          "icon": "",
+          "class": "ml-menu",
+          "groupTitle": false,
+          "badge": "",
+          "badgeClass": "",
+          "role": [""],
+          "submenu": []
+        },
+        {
+          "path": "/admin/human-resources/leave-balance",
+          "title": "MENUITEMS.HR.LIST.LEAVE-BALANCE",
+          "iconType": "",
+          "icon": "",
+          "class": "ml-menu",
+          "groupTitle": false,
+          "badge": "",
+          "badgeClass": "",
+          "role": [""],
+          "submenu": []
+        },
+        {
+          "path": "/admin/human-resources/leave-types",
+          "title": "MENUITEMS.HR.LIST.LEAVE-TYPES",
+          "iconType": "",
+          "icon": "",
+          "class": "ml-menu",
+          "groupTitle": false,
+          "badge": "",
+          "badgeClass": "",
+          "role": [""],
+          "submenu": []
+        },
+        {
+          "path": "/admin/human-resources/holidays",
+          "title": "MENUITEMS.HR.LIST.HOLIDAYS",
+          "iconType": "",
+          "icon": "",
+          "class": "ml-menu",
+          "groupTitle": false,
+          "badge": "",
+          "badgeClass": "",
+          "role": [""],
+          "submenu": []
+        },
+        {
+          "path": "/admin/human-resources/todays-attendance",
+          "title": "MENUITEMS.HR.LIST.TODAY-ATTENDANCE",
+          "iconType": "",
+          "icon": "",
+          "class": "ml-menu",
+          "groupTitle": false,
+          "badge": "",
+          "badgeClass": "",
+          "role": [""],
+          "submenu": []
+        },
+        {
+          "path": "/admin/human-resources/attendance-detail",
+          "title": "MENUITEMS.HR.LIST.ATTENDANCE-DETAIL",
+          "iconType": "",
+          "icon": "",
+          "class": "ml-menu",
+          "groupTitle": false,
+          "badge": "",
+          "badgeClass": "",
+          "role": [""],
+          "submenu": []
+        },
+        {
+          "path": "/admin/human-resources/attendance-sheet",
+          "title": "MENUITEMS.HR.LIST.ATTENDANCE-SHEET",
+          "iconType": "",
+          "icon": "",
+          "class": "ml-menu",
+          "groupTitle": false,
+          "badge": "",
+          "badgeClass": "",
+          "role": [""],
+          "submenu": []
+        }
+
+      ]
+    },
+
+    {
+      "path": "/user/dashboard",
+      "title": "MENUITEMS.USER.LIST.DASHBOARD",
+      "iconType": "material-icons-outlined",
+      "icon": "space_dashboard",
+      "class": "",
+      "groupTitle": false,
+      "badge": "",
+      "badgeClass": "",
+      "role": ["User"],
+      "submenu": []
+    },
+    {
+      "path": "",
+      "title": "MENUITEMS.APPOINTMENTS.TEXT",
+      "iconType": "material-icons-outlined",
+      "icon": "person",
+      "class": "menu-toggle",
+      "groupTitle": false,
+      "badge": "",
+      "badgeClass": "",
+      "role": ["Admin","User","Teacher"],
+      "submenu": [
+        {
+          "path": "/appointments/all-appointments",
+          "title": "MENUITEMS.APPOINTMENTS.LIST.ALL-APPOINTMENTS",
+          "iconType": "",
+          "icon": "",
+          "class": "ml-menu",
+          "groupTitle": false,
+          "badge": "",
+          "badgeClass": "",
+          "role": [""],
+          "submenu": []
+        }
+        
+     
+      ]
+    },
+    {
+      "path": "/teacher/lectures",
+      "title": "MENUITEMS.TEACHER.LIST.LECTURES",
+      "iconType": "material-icons-outlined",
+      "icon": "menu_book",
+      "class": "",
+      "groupTitle": false,
+      "badge": "",
+      "badgeClass": "",
+      "role": ["Teacher"],
+      "submenu": []
+    },
+    {
+      "path": "/teacher/leave-request",
+      "title": "MENUITEMS.TEACHER.LIST.LEAVE-REQUEST",
+      "iconType": "material-icons-outlined",
+      "icon": "offline_pin",
+      "class": "",
+      "groupTitle": false,
+      "badge": "",
+      "badgeClass": "",
+      "role": ["Teacher"],
+      "submenu": []
+    },
+    {
+      "path": "/teacher/exam-schedule",
+      "title": "MENUITEMS.TEACHER.LIST.EXAM-SCHEDULE",
+      "iconType": "material-icons-outlined",
+      "icon": "history_edu",
+      "class": "",
+      "groupTitle": false,
+      "badge": "",
+      "badgeClass": "",
+      "role": ["Teacher"],
+      "submenu": []
+    },
+    {
+      "path": "/teacher/settings",
+      "title": "MENUITEMS.TEACHER.LIST.SETTINGS",
+      "iconType": "material-icons-outlined",
+      "icon": "settings",
+      "class": "",
+      "groupTitle": false,
+      "badge": "",
+      "badgeClass": "",
+      "role": ["Teacher"],
+      "submenu": []
+    },
+
+    {
+      "path": "/student/dashboard",
+      "title": "MENUITEMS.STUDENT.LIST.DASHBOARD",
+      "iconType": "material-icons-outlined",
+      "icon": "space_dashboard",
+      "class": "",
+      "groupTitle": false,
+      "badge": "",
+      "badgeClass": "",
+      "role": ["Student"],
+      "submenu": []
+    },
+    {
+      "path": "/student/homework",
+      "title": "MENUITEMS.STUDENT.LIST.HOMEWORK",
+      "iconType": "material-icons-outlined",
+      "icon": "article",
+      "class": "",
+      "groupTitle": false,
+      "badge": "",
+      "badgeClass": "",
+      "role": ["Student"],
+      "submenu": []
+    },
+    {
+      "path": "/student/leave-request",
+      "title": "MENUITEMS.STUDENT.LIST.LEAVE-REQUEST",
+      "iconType": "material-icons-outlined",
+      "icon": "offline_pin",
+      "class": "",
+      "groupTitle": false,
+      "badge": "",
+      "badgeClass": "",
+      "role": ["Student"],
+      "submenu": []
+    },
+    {
+      "path": "/student/timetable",
+      "title": "MENUITEMS.STUDENT.LIST.TIME-TABLE",
+      "iconType": "material-icons-outlined",
+      "icon": "table_chart",
+      "class": "",
+      "groupTitle": false,
+      "badge": "",
+      "badgeClass": "",
+      "role": ["Student"],
+      "submenu": []
+    },
+    {
+      "path": "/student/settings",
+      "title": "MENUITEMS.STUDENT.LIST.SETTINGS",
+      "iconType": "material-icons-outlined",
+      "icon": "settings",
+      "class": "",
+      "groupTitle": false,
+      "badge": "",
+      "badgeClass": "",
+      "role": ["Student"],
+      "submenu": []
+    }
+
+
+
+
+
+ 
+
+
+
+ 
+  
+ 
+  ]
+}

@@ -1,0 +1,113 @@
+<div class="addContainer">
+  <div class="modalHeader">
+    <div class="avatarDetails">
+      
+      <div class="modalTitle">
+        {{ dialogTitle }}
+      </div>
+    </div>
+    <button mat-icon-button mat-dialog-close class="modal-close-button" aria-label="Close dialog" type="button">
+      <mat-icon>close</mat-icon>
+    </button>
+  </div>
+
+  <div mat-dialog-content>
+    <form class="register-form m-4" [formGroup]="UserForm" (ngSubmit)="submit()">
+      <div class="row">
+        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 mb-2">
+          <mat-form-field class="example-full-width mb-3" appearance="outline">
+            <mat-label>First Name</mat-label>
+            <input matInput formControlName="firstName" required>
+            <mat-icon class="material-icons-outlined color-icon p-3" matSuffix>face</mat-icon>
+            <mat-error *ngIf="UserForm.get('firstName')?.hasError('required')">
+              First name is required
+            </mat-error>
+          </mat-form-field>
+        </div>
+        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 mb-2">
+          <mat-form-field class="example-full-width mb-3" appearance="outline">
+            <mat-label>Last Name</mat-label>
+            <input matInput formControlName="lastName" required>
+            <mat-icon class="material-icons-outlined color-icon p-3" matSuffix>face</mat-icon>
+            <mat-error *ngIf="UserForm.get('lastName')?.hasError('required')">
+              Last name is required
+            </mat-error>
+          </mat-form-field>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 mb-2">
+          <mat-form-field class="example-full-width mb-3" appearance="outline">
+            <mat-label>User name</mat-label>
+            <input matInput formControlName="username" required>
+            <mat-icon class="material-icons-outlined color-icon p-3" matSuffix>face</mat-icon>
+            <mat-error *ngIf="UserForm.get('username')?.hasError('required')">
+              User name is required
+            </mat-error>
+          </mat-form-field>
+        </div>
+        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 mb-2">
+          <mat-form-field class="example-full-width mb-3" appearance="outline">
+            <mat-label>Email</mat-label>
+            <input matInput formControlName="email" required>
+            <mat-icon class="material-icons-outlined color-icon p-3" matSuffix>email</mat-icon>
+            <mat-error *ngIf="UserForm.get('email')?.hasError('email')">
+              Please enter a valid email address
+            </mat-error>
+          </mat-form-field>
+        </div>
+
+     
+
+
+    
+
+     
+
+      </div>
+
+ <div class="row">
+  <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 mb-2">
+    <mat-form-field class="example-full-width mb-3" appearance="outline">
+      <mat-label>Password</mat-label>
+      <input matInput formControlName="password" type="password" required>
+      @if (UserForm.get('password')?.hasError('required')) {
+      <mat-error>
+        password is required
+      </mat-error>
+      }
+    </mat-form-field>
+  </div>
+  <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 mb-2">
+    <mat-form-field class="example-full-width mb-3" appearance="outline">
+      <mat-label>Select Role</mat-label>
+      <mat-select formControlName="role" required>
+        <mat-option [value]="'Admin'">
+          Admin
+        </mat-option>
+        <mat-option [value]="'User'">
+          User
+        </mat-option>
+      </mat-select>
+      @if (UserForm.get('role')?.hasError('required')) {
+      <mat-error>
+      Select Role
+      </mat-error>
+      }
+    </mat-form-field>
+  </div>
+
+ </div>
+
+      <div class="row">
+        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 mb-2">
+          <div class="example-button-row">
+            <button mat-flat-button class="formSubmitBtn" [disabled]="!UserForm.valid" type="submit">Save</button>
+            <button mat-flat-button mat-dialog-close class="formCancelBtn" tabindex="-1">Cancel</button>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
